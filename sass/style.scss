@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Poppins" !important;
+}
+// variables//
+
+// HEADER//
+.header {
+  height: 92px;
+  background: #1c1e53;
+  width: 100%;
+  nav {
+    .d-flex {
+      .site__btn {
+        padding: 16px 48px;
+        border-radius: 41px;
+        border: 2px solid rgba(244, 246, 252, 0.2);
+        background-color: transparent;
+        &:hover {
+          background-color: #fcd980;
+          border-color: #fcd980;
+          color: white;
+          font-family: "Poppins";
+        }
+      }
+    }
+  }
+}
+// HEADER//
+
+// SITE HERO//
+main {
+  #section-hero {
+    background: var(--Tint-blue, #1c1e53);
+    .site-hero {
+      padding: 158px 0px;
+      &__left {
+        h1 {
+          width: 582px;
+          margin-bottom: 24px;
+          color: var(--White, #fff);
+          font-family: "Poppins";
+          font-size: 54px;
+          font-weight: 600;
+          line-height: 74px;
+        }
+        p {
+          width: 562px;
+          margin-bottom: 49px;
+          color: var(--White, #fff);
+          opacity: 0.7;
+          font-family: "Poppins";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+          opacity: 0.7;
+        }
+        .site-hero__left__b-tns {
+          &__one {
+            padding: 16px 56px;
+            border-radius: 41px;
+            color: white;
+            border: 2px solid rgba(244, 246, 252, 0.2);
+            background-color: transparent;
+            &:hover {
+              background-color: #fcd980;
+              border-color: #fcd980;
+              color: white;
+              font-family: "Poppins";
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// SITE HERO//
+
+// section design//
+
+.design-section {
+  background: var(--Grey, #f4f6fc);
+  padding: 128px 0px;
+  &__title {
+    &__one {
+      padding: 0px 590px;
+      width: 419px;
+      color: var(--Dark-blue, #282938);
+      font-family: " Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    &__second {
+      width: 530px;
+      color: var(--Dark-blue, #282938);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 64px;
+      margin-bottom: 47px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__cards {
+    &__top {
+      &__area {
+        position: relative;
+        width: 405px;
+        height: 316px;
+        background: #fff;
+        padding: 108px 42px 48px 48px;
+
+        &__h {
+          margin-bottom: 12px;
+          font-size: 24px;
+        }
+        &__p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.design-section__cards__bottom {
+  &__area {
+    margin-top: 40px;
+    width: 405px;
+    height: 316px;
+    background: #fff;
+    padding: 108px 42px 48px 48px;
+    &__h {
+      width: 315.305px;
+      color: var(--Dark-blue, #282938);
+      font-family: "Poppins";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 36px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+// section design//
+
+// section about//
+
+.about {
+  &-section {
+    padding: 128px 0px;
+    &__h {
+      width: 595px;
+      font-size: 54px;
+    }
+    &__p {
+      width: 484px;
+      opacity: 0.7;
+    }
+  }
+}
+
+// section about//
+
+// section content//
+
+.content {
+  &-top {
+    height: 376px;
+    background: #f4f5f5;
+    &__left {
+      padding: 96px 0px 0px 80px;
+      &__h {
+        width: 515px;
+        font-size: 38px;
+      }
+      &__p {
+        width: 515px;
+        font-size: 16px;
+      }
+    }
+    &__right {
+      padding: 96px 0px 0px 80px;
+      &__h {
+        width: 515px;
+        font-size: 38px;
+      }
+      &__p {
+        width: 515px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// section content//
+
+// footer//
+
+footer {
+  padding: 96px 449px 92px 160px;
+  background: #1c1e53;
+  &-left {
+    &__contact {
+      width: 516px;
+      height: 91px;
+      background: var(--Yellow, #fcd980);
+    }
+  }
+}
+
+// footer//
