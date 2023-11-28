@@ -4,96 +4,136 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- header -->
     <header class="header ">
-        <nav class="navbar container justify-content-between align-items-center">
-            <a href="#"><img src="assets/images/Logo.svg" alt=""></a>
-            <div class="d-flex align-items-center gap-5">
-                <ul class="nav nav-underline gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-capitalize" href="about.html">about us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-capitalize" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-capitalize" href="#">work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-capitalize" href="#">blog</a>
-                    </li>
-                </ul>
-                <button class="site__btn">Contact</button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="section-hero">
-            <div class="site-hero container  d-flex gap-5">
-                <div class="site-hero__left">
-                    <h1 class="site-hero__left__title">Building stellar websites for early startups</h1>
-                    <p class="site-hero__left__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt.
-                    </p>
-                    <div class=" d-flex align-items-center gap-3 site-hero__left__b-tns">
-                        <button class="site-hero__left__b-tns__one">
-                            View our work
-                        </button>
-                        <a href="#">
-                            <img src="assets/images/Text Button.svg" alt="">
+        <!-- NAVBARSECTION -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/Logo.svg" alt="image">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="navbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="header-title" href="#">
+                            <img src="assets/images/Logo.svg" alt="image">
                         </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-center">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="assets/pages/about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link db" href="#">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/assets/pages/blog.html">Blog</a>
+                            </li>
+                        </ul>
+                        <button class="site-nav-btn">contact us</button>
                     </div>
                 </div>
-                <div class="site-hero__right">
-                    <img class="w-100" src="assets/images/hero-left-img.svg" alt="">
+            </div>
+        </nav>
+        <!-- //NAVBARSECTION -->
+        <!-- HERO SECTION -->
+        <section class="site-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-5">
+                        <h1 data-aos="fade-right" data-aos-duration="700"
+                            class=" site-row-heading h1 fw-bold text-white mb-3">Building stellar
+                            websites for early
+                            startups</h1>
+                        <p data-aos="fade-right" class="lead site-row-p text-white mb-5"> Lorem ipsum dolor sit amet,
+                            consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="d-flex flex-column flex-lg-row justify-content-start align-items-center gap-5">
+                            <button type="button" class="site-btn">View our work</button>
+                            <a href="#" class="text-link text-decoration-none text-white">view pricing <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 ">
+                        <img data-aos="flip-down" data-aos-duration="800" src="assets/images/hero-left-img.svg"
+                            class="img-fluid" width="100%" alt="hero images">
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="design" class=" design-section">
+        <!-- //HERO SECTION -->
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+    <main class="main">
+        <!-- section project -->
+        <section class="project">
             <div class="container">
-                <div class="design-section__title">
-                    <p class="design-section__title__one">
-                        Features
-                    </p>
-                    <h2 class="design-section__title__second">
+                <div class="project-section mb-5 d-flex justify-content-between align-items-center ">
+                    <h1>View our projects</h1>
+                    <a href="">
+                        <img class="" src="assets/images/View More button black.svg" alt="">
+                    </a>
+                </div>
+                <div class="row  site-main-row">
+
+                    <div
+                        class="col-xxl-8 col-xl-8 col-lg-12 col-md-12 col-sm-12 mb-5 mb-xxl-0 mb-xl-0 mb-lg-0 mb-md-0 mb-sm-0 ">
+                        <img class="img-fluid img-left" src="assets/images/project-bg-left.svg" alt=""
+                            style="height: 100%;">
+                    </div>
+
+                    <div class=" col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 ">
+                        <img class="img-fluid img-top mb-5" src="assets/images/project-right-top.svg" alt="">
+                        <img class="img-fluid w-100 img-bootom" src="assets/images/project-right-bottom.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section project -->
+
+        <!-- section design -->
+        <section class="design ">
+            <div class="container">
+                <div class="design-heading text-center  pt-5 mb-5" data-aos="zoom-in-down">
+                    <h5 class="">Features</h5>
+                    <h2 class="design-title m-lg-auto">
                         Design that solves problems, one product at a time
                     </h2>
                 </div>
-                <div class="design-section__cards">
-                    <div class="design-section__cards__top d-flex gap-5">
-                        <div class="design-section__cards__top__area">
-                            <h5 class="design-section__cards__top__area__h">
+                <div class="row">
+                    <div class="cards col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 border border-1 mb-5 ">
+                        <div>
+
+                            <h5 class="">
                                 Uses Client First
                             </h5>
-                            <p class="design-section__cards__top__area__p">
-                                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis
-                                eu
-                                gravida mi. Pellentesque et
-                                velit aliquam sed mi.
-                            </p>
                         </div>
-                        <div class="design-section__cards__top__area">
-                            <h5 class="design-section__cards__top__area__h">Two Free Revision Round</h5>
-                            <p class="design-section__cards__top__area__p">Euismod faucibus turpis eu gravida mi.
-                                Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et
-                                velit aliquam sed mi.</p>
-                        </div>
-                        <div class="design-section__cards__top__area  bs-white">
-                            <a href="">
-                                <img class="position-absolute" src="assets/images/Icon.svg" alt="">
-                            </a>
-                            <h5 class="design-section__cards__top__area__h">
-                                Template Customization
-                            </h5>
-                            <p class="design-section__cards__top__area__p">
+                        <div>
+                            <p>
                                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis
                                 eu
                                 gravida mi. Pellentesque et
@@ -101,38 +141,77 @@
                             </p>
                         </div>
                     </div>
-                    <div class="design-section__cards__bottom d-flex gap-5">
-                        <div class="design-section__cards__bottom__area">
-                            <a href="">
-                                <img class="position-absolute  top-" src="assets/images/Icon (1).svg" alt="">
-                            </a>
-                            <h5 class="design-section__cards__bottom__area__h">
+                    <div
+                        class="cards align-items-center   col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 border border-1">
+                        <div>
+                            <h5>
+                                Two Free Revision Round
+                            </h5>
+                        </div>
+                        <div>
+                            <p>
+                                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis
+                                eu
+                                gravida mi. Pellentesque et
+                                velit aliquam sed mi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cards  col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 border border-1">
+                        <div>
+                            <h5>
+                                Template Customization
+                            </h5>
+                        </div>
+                        <div>
+                            <p>
+                                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis
+                                eu
+                                gravida mi. Pellentesque et
+                                velit aliquam sed mi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cards  col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 border border-1">
+                        <div>
+
+                            <h5>
                                 24/7 Support
                             </h5>
-                            <p class="design-section__cards__bottom__area__p">
+                        </div>
+                        <div>
+                            <p>
                                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis
                                 eu
                                 gravida mi. Pellentesque et
                                 velit aliquam sed mi.
                             </p>
                         </div>
-                        <div class="design-section__cards__bottom__area">
+                    </div>
+                    <div class="cards  col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 border border-1">
+                        <div>
 
-                            <h5 class="design-section__cards__bottom__area__h ">
+                            <h5>
                                 Quick Delivery
                             </h5>
-                            <p class="design-section__cards__bottom__area__p ">
+                        </div>
+                        <div>
+                            <p>
                                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis
                                 eu
                                 gravida mi. Pellentesque et
                                 velit aliquam sed mi.
                             </p>
                         </div>
-                        <div class="design-section__cards__bottom__area">
-                            <h5 class="design-section__cards__bottom__area__h">
+                    </div>
+                    <div class="cards  col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 border border-1">
+                        <div>
+                            <h5>
                                 Hands-on approach
                             </h5>
-                            <p class="design-section__cards__bottom__area__p">
+                        </div>
+                        <div>
+                            <p>
                                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis
                                 eu
                                 gravida mi. Pellentesque et
@@ -142,39 +221,124 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
         </section>
 
-    </main>
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-section__left">
-                <img src="assets/images/Logo.svg" alt="">
-                <p class="footer-section__left__p">We are always open to discuss your project and improve your online
-                    presence.</p>
-                <label for="">
-                    <input type="text" name="" id="">
-                </label>
+        <!-- section carousel -->
+        <section class=" carousel w-100">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h1 class="mb-5 mt-5">What our clients say about us</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="mb-3 mt-5 carousel-title ">
+                                "The best agency we’ve worked with so far. They understand our product and are able to
+                                add new features with a great
+                                focus."
+                            </h1>
+                            <div>
+                                <img class="img-icon" src="assets/images/woman-in-collared-shirt-774909.svg" alt="">
+                                <span>Jenny Wilson</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev bg-black" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next bg-black" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="footer-section__right">
-                <h2 class="footer-section__right__h">
-                    Lets Talk!
-                </h2>
-                <p class="footer-section__right__p">
-                    We are always open to discuss your project, improve your online presence and help with your UX/UI
-                    design challenges.
-                </p>
-                <a href="">
-                    <img src="assets/images/facebook.svg" alt="">
-                    <img src="assets/images/twitter.svg" alt="">
-                    <img src="assets/images/instagram.svg" alt="">
-                    <img src="assets/images/in.svg" alt="">
-                </a>
+        </section>
+        <!-- section carousel -->
+
+    </main>
+    <!-- main -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-area">
+                <div class="footer-left col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div>
+                        <a href="">
+                            <img class="mb-2" src="assets/images/Logo.svg" alt="">
+                        </a>
+                        <p class="text-light mb-5">We are always open to discuss your project and improve your online
+                            presence.
+                        </p>
+                        <form action="">
+                            <div class="row">
+                                <div class="input-contact d-flex gap-4">
+                                    <div>
+                                        <p>Email me at</p>
+                                        <a class="text-decoration-none" href="">contact@website.com</a>
+                                    </div>
+                                    <div>
+                                        <p>Call us</p>
+                                        <a class="text-decoration-none" href="">0927 6277 28525</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-right col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div>
+                        <h2 class="text-light">Lets Talk!</h2>
+                        <p class="text-light">We are always open to discuss your project, improve your online presence
+                            and
+                            help
+                            with your UX/UI
+                            design challenges.</p>
+                        <div class="d-flex gap-4">
+                            <a class="text-decoration-none" href="">
+                                <img src="assets/images/facebook.svg" alt="">
+                            </a>
+                            <a class="text-decoration-none" href="">
+                                <img src="assets/images/twitter.svg" alt="">
+                            </a>
+                            <a class="text-decoration-none" href="">
+                                <img src="assets/images/instagram.svg" alt="">
+                            </a>
+                            <a class="text-decoration-none" href="">
+                                <img src="assets/images/in.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </footer>
+
+    <!-- //FOOTER SECTION -->
+
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- script js -->
 </body>
 
 </html>

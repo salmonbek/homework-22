@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins" !important;
+}
+
+.header {
+  width: 100%;
+  padding: 128px 0px;
+}
+
+@media (max-width: 992px) {
+  .header {
+    text-align: center;
+  }
+}
+.header > .site-hero {
+  width: 100%;
+  height: 1136px;
+}
+
+.navbar {
+  height: 92px;
+  background: #1c1e53;
+}
+.navbar .offcanvas {
+  background: #1c1e53;
+}
+@media (max-width: 992px) {
+  .navbar .offcanvas {
+    background-image: url("/assets/images/istockphoto-1465188429-170667a.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.offcanvas .nav-item {
+  padding: 0px 15px;
+}
+
+.offcanvas .nav-link {
+  color: white;
+  transition: all 0.5s;
+}
+.offcanvas .nav-link:hover {
+  padding: 12px 20px;
+  color: #fcd980;
+}
+.site-nav-btn {
+  padding: 12px 28px;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  background-color: transparent;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.7s;
+}
+.site-nav-btn:hover {
+  color: #1b1c2b;
+  background-color: #fcd980;
+}
+.site-btn {
+  padding: 12px 36px;
+  border: 2px solid #fcd980;
+  border-radius: 41px;
+  background: #fcd980;
+  transition: all 0.7s;
+  color: #1b1c2b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.site-btn:hover {
+  background-color: transparent;
+  color: #fcd980;
+  transform: scale(1.1);
+}
+
+/* section work hero */
+.work {
+  width: 100%;
+  height: 416px;
+  background: var(--Grey, #f4f6fc);
+}
+/* section work hero */
+
+/* section work bottom */
+.work-section-btn {
+  padding: 16px 48px;
+  border-radius: 41px;
+  background: #fcd980;
+  border: none;
+}
+.work-section-btn:hover {
+  background: transparent;
+  transform: scale(1.1);
+  border: 1px solid #fcd980;
+  color: black;
+}
+/* section work bottom */
+
+/* footer */
+footer {
+  width: 100%;
+  height: 489px;
+  background: #1c1e53;
+}
+.input-contact {
+  margin-top: 90px;
+  width: 617px;
+  height: 95px;
+  background: var(--Yellow, #fcd980);
+  padding: 17px 13px 17px 37px;
+}
+.footer-area {
+  padding: 120px 0px 92px 0px;
+}
+/* footer */

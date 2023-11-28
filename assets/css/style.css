@@ -1,169 +1,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Poppins" !important;
+  height: 100%;
+}
+/* header */
+.header {
+  width: 100%;
+  height: 100vh;
+  background: #1c1e53;
+}
+@media (max-width: 992px) {
+  .header {
+    text-align: center;
+  }
+}
+.header > .site-hero {
+  width: 100%;
+  height: 1136px;
+  margin-top: 92px;
+  padding: 126px 0px;
 }
 
-.header {
+.navbar {
   height: 92px;
   background: #1c1e53;
-  width: 100%;
 }
-.header nav .d-flex .site__btn {
-  padding: 16px 48px;
-  border-radius: 41px;
-  border: 2px solid rgba(244, 246, 252, 0.2);
-  background-color: transparent;
-}
-.header nav .d-flex .site__btn:hover {
-  background-color: #fcd980;
-  border-color: #fcd980;
-  color: white;
-  font-family: "Poppins";
-}
-
-main #section-hero {
-  background: var(--Tint-blue, #1c1e53);
-}
-main #section-hero .site-hero {
-  padding: 158px 0px;
-}
-main #section-hero .site-hero__left h1 {
-  width: 582px;
-  margin-bottom: 24px;
-  color: var(--White, #fff);
-  font-family: "Poppins";
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 74px;
-}
-main #section-hero .site-hero__left p {
-  width: 562px;
-  margin-bottom: 49px;
-  color: var(--White, #fff);
-  opacity: 0.7;
-  font-family: "Poppins";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 28px;
-  opacity: 0.7;
-}
-main #section-hero .site-hero__left .site-hero__left__b-tns__one {
-  padding: 16px 56px;
-  border-radius: 41px;
-  color: white;
-  border: 2px solid rgba(244, 246, 252, 0.2);
-  background-color: transparent;
-}
-main #section-hero .site-hero__left .site-hero__left__b-tns__one:hover {
-  background-color: #fcd980;
-  border-color: #fcd980;
-  color: white;
-  font-family: "Poppins";
-  color: black;
-}
-
-.design-section {
-  background: var(--Grey, #f4f6fc);
-  padding: 128px 0px;
-}
-.design-section__title__one {
-  padding: 0px 590px;
-  width: 419px;
-  color: var(--Dark-blue, #282938);
-  font-family: " Poppins";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 28px;
-}
-.design-section__title__second {
-  width: 530px;
-  color: var(--Dark-blue, #282938);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 64px;
-  margin-bottom: 47px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.design-section__cards__top__area {
-  position: relative;
-  width: 405px;
-  height: 316px;
-  background: #fff;
-  padding: 108px 42px 48px 48px;
-}
-.design-section__cards__top__area__h {
-  margin-bottom: 12px;
-  font-size: 24px;
-}
-.design-section__cards__top__area__p {
-  font-size: 16px;
-}
-
-.design-section__cards__bottom__area {
-  margin-top: 40px;
-  width: 405px;
-  height: 316px;
-  background: #fff;
-  padding: 108px 42px 48px 48px;
-}
-.design-section__cards__bottom__area__h {
-  width: 315.305px;
-  color: var(--Dark-blue, #282938);
-  font-family: "Poppins";
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 36px;
-  margin-bottom: 12px;
-}
-
-.about-section {
-  padding: 128px 0px;
-}
-.about-section__h {
-  width: 595px;
-  font-size: 54px;
-}
-.about-section__p {
-  width: 484px;
-  opacity: 0.7;
-}
-
-.content-top {
-  height: 376px;
-  background: #f4f5f5;
-}
-.content-top__left {
-  padding: 96px 0px 0px 80px;
-}
-.content-top__left__h {
-  width: 515px;
-  font-size: 38px;
-}
-.content-top__left__p {
-  width: 515px;
-  font-size: 16px;
-}
-.content-top__right {
-  padding: 96px 0px 0px 80px;
-}
-.content-top__right__h {
-  width: 515px;
-  font-size: 38px;
-}
-.content-top__right__p {
-  width: 515px;
-  font-size: 16px;
-}
-
-footer {
-  padding: 96px 449px 92px 160px;
+.navbar .offcanvas {
   background: #1c1e53;
 }
-footer-left__contact {
-  width: 516px;
-  height: 91px;
-  background: var(--Yellow, #fcd980);
+@media (max-width: 992px) {
+  .navbar .offcanvas {
+    background-image: url("/assets/images/istockphoto-1465188429-170667a.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
+
+.offcanvas .nav-item {
+  padding: 0px 15px;
+}
+
+.offcanvas .nav-link {
+  color: white;
+  transition: all 0.5s;
+}
+.offcanvas .nav-link:hover {
+  padding: 12px 20px;
+  color: #fcd980;
+}
+.site-nav-btn {
+  padding: 12px 28px;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  background-color: transparent;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.7s;
+}
+.site-nav-btn:hover {
+  color: #1b1c2b;
+  background-color: #fcd980;
+}
+.site-btn {
+  padding: 12px 36px;
+  border: 2px solid #fcd980;
+  border-radius: 41px;
+  background: #fcd980;
+  transition: all 0.7s;
+  color: #1b1c2b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.site-btn:hover {
+  background-color: transparent;
+  color: #fcd980;
+  transform: scale(1.1);
+}
+/* header */
+
+/* project section */
+.project {
+  padding: 57px 0px 128px 0px;
+}
+
+.img-left {
+  width: 100%;
+}
+.img-top {
+  width: 100%;
+}
+.img-bottom {
+  width: 100%;
+}
+/* project section */
+
+/* design section */
+.design {
+  width: 100%;
+  height: 2130px;
+  background: var(--Grey, #f4f6fc);
+}
+
+.design-title {
+  max-width: 630px;
+  width: 100%;
+}
+
+.cards {
+  padding: 108px 48px 42px 48px;
+  width: 405px;
+  height: 316px;
+  background-color: #fff;
+}
+
+/* design section */
+
+/* section carousel */
+
+.carousel {
+  height: 706px;
+  padding-top: 900px 0px 0px 0px;
+}
+.img-icon {
+  border-radius: 50%;
+}
+.carousel-control-prev {
+  padding: 10px 0px;
+  height: 50px;
+}
+.carousel-control-next {
+  padding: 10px 0px;
+  height: 50px;
+}
+.carousel-item {
+  padding-top: 20px px;
+  width: 843px;
+}
+
+/* section carousel */
+
+/* footer */
+footer {
+  width: 100%;
+  height: 489px;
+  background: #1c1e53;
+}
+.input-contact {
+  margin-top: 90px;
+  width: 617px;
+  height: 95px;
+  background: var(--Yellow, #fcd980);
+  padding: 17px 13px 17px 37px;
+}
+.footer-area {
+  padding: 120px 0px 92px 0px;
+}
+/* footer */
